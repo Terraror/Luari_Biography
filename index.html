@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini biography - Luari </title>
+  <style>
+    
+
+  body {
+  background-color: #ffca76;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color: #ffd27f;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a:hover {
+  color: #2a7ae2;
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: #e94948;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: #fff2e0;
+  padding: 15px;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main{
+    padding-left: 10px;
+  } 
+}
+
+ul li {
+  margin-bottom: 5px;
+  padding-left: 15px;
+  position: relative;
+}
+
+ul li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: #8432f6;
+}
+
+footer {
+  background-color: #ffd27f;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+
+  h1 {
+    color: #2a7ae2;
+  }
+    h2 {
+        color: #2a92e2;
+    }
+
+  a {
+    color: #e94848;
+    text-decoration: none;
+  }
+  img {
+  display: block;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  width: 300px; /* размер задаём здесь */
+  max-width: 100%; /* чтобы было адаптивно на мобильных */
+  height: auto; /* сохраняем пропорции */
+}
+/* Контейнер карточек */
+.cards {
+  display: flex;          /* включаем flex-контейнер */
+  flex-wrap: wrap;        /* разрешаем перенос строк */
+  gap: 16px;              /* расстояние между карточками */
+  margin-top: 12px;
+}
+
+/* Сама карточка */
+.card {
+  flex: 1 1 200px;        /* растёт, сжимается, базовая ширина 200px */
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Мелкая анимация при наведении */
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 6px 12px rgba(0,0,0,0.18);
+}
+
+/* Заголовок внутри карточки (необязательно) */
+.card h4 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>Luari</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About me</h2>
+      <p>Your friendly neighbor furry lion :3</p>
+    </section>
+
+    <section id="interests">
+      <h3>My interests</h3>
+<div class="cards">
+  <article class="card">
+    <h4>Furry</h4>
+    <p>Creativity and community, where I can be myself for real.</p>
+  </article>
+
+  <article class="card">
+    <h4>Martial arts</h4>
+    <p>Discipline, emotion control and phisical activities - my best friends for staying strong both: mentaly and physically</p>
+  </article>
+
+  <article class="card">
+    <h4>Music</h4>
+    <p>Inspiration and rest for the mind</p>
+  </article>
+
+  <article class="card">
+    <h4>Reading</h4>
+    <p>Books are my tools for creativity and imagination</p>
+  </article>
+</div>
+      
+    </section>
+
+    <section id="gallery">
+      <h2>My arts</h2>
+        <img src="images/Львёнок111.png" alt="Art 1">
+        <img src="images/Lion2.jpg " alt="Art 2">
+    </section>
+
+    <section id="contacts">
+      <h2>Contacts</h2>
+      <ul>
+        <li>Telegram: <a href="https://t.me/Luari_da_lion" target="_blank" rel="noopener noreferrer">@Luari_da_lion</a></li>
+
+  </main>
+
+  <footer id="contacts">
+    <p>© 2025 Луари • <a href="#" target="_blank" rel="noopener noreferrer">Мой профиль</a></p>
+  </footer>
+</body>
+</html>
